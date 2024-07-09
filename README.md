@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ficha Técnica de Instalación Local del Proyecto `ssr-fetch-dinamic`
 
-## Getting Started
+## Requisitos Previos
+Antes de comenzar, asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo e instalarlo desde [nodejs.org](https://nodejs.org/).
 
-First, run the development server:
+## Pasos para la Instalación y Ejecución
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clonar el Repositorio**  
+   Abre una terminal y clona el repositorio de GitHub:
+   ```bash
+   git clone <https://github.com/MiguelEspinosaAP/ssr-fetch-dinamic.git>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Instalar las Dependencias**  
+   Navega al directorio del proyecto y ejecuta el siguiente comando para instalar las dependencias:
+    ```bash
+   cd ssr-fetch-dinamic
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Ejecutar el Proyecto**
+    Una vez que se hayan instalado todas las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
 
-## Learn More
+    ```bash
+    npm run dev
+    
+    El servidor de desarrollo se iniciará en [http://localhost:3000].
 
-To learn more about Next.js, take a look at the following resources:
+4. **Abrir la Aplicación en el Navegador**
+    Abre tu navegador y navega a [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Descripción de Archivos y Directorios Principales
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **`/components`**: Contiene los componentes de React utilizados en la aplicación.
+- **`/home`**: Contiene la página de React utilizada en la aplicación.
 
-## Deploy on Vercel
+## Dependencias Principales
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- next: Framework de React para renderizado del lado del servidor (SSR) y generación estática.
+- react: Biblioteca para construir interfaces de usuario.
+- react-dom: Proporciona métodos específicos del DOM que se emparejan con React.
+- axios: Cliente HTTP basado en promesas para el navegador y node.js.
+- react-modal: Componente de modal accesible para React.
+- tailwindcss: Framework de CSS para estilos de utilidad.
+- eslint-config-next: Configuración de ESLint para proyectos de Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Comandos Disponibles
+
+- npm run dev: Inicia el servidor de desarrollo.
+- npm run build: Compila el proyecto para producción.
+- npm run start: Inicia el servidor de producción.
+- npm run lint: Ejecuta ESLint para encontrar y corregir problemas en el código.
